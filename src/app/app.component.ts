@@ -7,8 +7,7 @@ import {Router} from "@angular/router";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  constructor(private headerStore: ServiceService, private router: Router) {
+export class AppComponent {constructor(private headerStore: ServiceService, private router: Router) {
   }
 
   /**
@@ -41,10 +40,10 @@ export class AppComponent {
    * клик по элементам Toggle theme
    */
   public clickOnSwitchTheme({detail}) {
-    return console.log('clickOnSwitchTheme:',  detail)
-    if (detail.target === '#theme_1'){
-      this.router.navigate(['theme_1']);
-    } else if (detail.target === '#theme_2') {
+    console.log('clickOnSwitchTheme:',  detail.target.id)
+    if (detail.target.id === 'theme_1'){
+      this.router.navigate(['']);
+    } else if (detail.target.id === 'theme_2') {
       this.router.navigate(['theme_2']);
     }
   }

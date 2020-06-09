@@ -1,6 +1,26 @@
-<news-a
+<s-abdullakh-news
   [newsImg]="newsImg()"
   [news]="news()"
   [sidebar]="sidebar()"
   (clickOnNews)="clickOnNews($event)"
-></news-a>
+></s-abdullakh-news>
+<s-abdullakh-new-post
+  [newPostTitle]="newPostTitle()"
+  [newPost]="newPost()"
+  (clickOnNewPost)="clickOnNewPost($event)"
+></s-abdullakh-new-post>
+<s-abdullakh-popular-resources
+  [popularAsideTitle]="popularAsideTitle()"
+  [popularAside]="popularAside()"
+  [popularBanner]="popularBanner()"
+  (clickOnPopular)="clickOnPopular($event)"
+></s-abdullakh-popular-resources>
+<s-abdullakh-events
+  [eventsTitle]="eventsTitle()"
+  [events]="events()"
+  (clickOnEvents)="clickOnEvents($event)"
+></s-abdullakh-events>
+<s-abdullakh-new-listiner
+  [newlistner]="newlistner()"
+  (clickOnListiner)="clickOnListiner($event)"
+></s-abdullakh-new-listiner>
