@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "wibbitzInAngular"
+    }
+  },
+  "defaultProject": "wibbitzInAngular",
+  "cli": {
+    "analytics": "ee5b0ad2-2348-4e15-bcee-e0710d1c1fbf"
+  }
 }
