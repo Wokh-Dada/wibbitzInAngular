@@ -40,10 +40,9 @@ export class AppComponent {constructor(private headerStore: ServiceService, priv
    * клик по элементам Toggle theme
    */
   public clickOnSwitchTheme({detail}) {
-    console.log('clickOnSwitchTheme:',  detail.target.id)
-    if (detail.target.id === 'theme_1'){
+    if (detail.id === 'theme_1'){
       this.router.navigate(['']);
-    } else if (detail.target.id === 'theme_2') {
+    } else if (detail.id === 'theme_2') {
       this.router.navigate(['theme_2']);
     }
   }
@@ -51,8 +50,8 @@ export class AppComponent {constructor(private headerStore: ServiceService, priv
   /**
    * текст кнопки header
    * */
-  subscribeText() {
-    return this.headerStore.getHeaderItems().subscribeText;
+  searchSubscribe() {
+    return this.headerStore.getHeaderItems().searchSubscribe;
   }
 
 

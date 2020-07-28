@@ -8,9 +8,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./first-page.component.css']
 })
 export class FirstPageComponent implements OnInit {
-
-  constructor(private firstPageStore: ServiceService) {
-  }
+  constructor(private firstPageStore: ServiceService) {}
 
   getFirsrPageItems() {
     return this.firstPageStore.getFirsrPageItems();

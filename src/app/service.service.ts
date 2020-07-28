@@ -13,7 +13,9 @@ export class ServiceService {
       {id: 'Reports', linkName: 'Reports'},
       {id: 'Costumer Stories', linkName: 'Costumer Stories'}
     ],
-    subscribeText: 'Subscribe',
+    searchSubscribe:[
+      { searchIcon:'search' , subscribeText: 'Subscribe'}
+    ]
   };
 
   getHeaderItems() {
@@ -134,11 +136,19 @@ export class ServiceService {
     ],
     newlistner: [
       {
-        title: 'Ready to take a test drive?',
-        subtitle: 'We`ll help you elevate strategy. Prices starting from $49 a month.',
-        linkText: 'See pricing',
-        btnText: 'Try it Free',
-        theme: true
+        listnerTitle: [
+          {
+            title: 'Ready to take a test drive?',
+            subtitle: 'We`ll help you elevate strategy. Prices starting from $49 a month.',
+            linkText: 'See pricing',
+          }
+        ],
+        listnerBtn: [
+          {
+            btnText: 'Try it Free',
+            theme: true
+          }
+        ],
       }
     ]
   };
